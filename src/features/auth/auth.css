@@ -1,0 +1,55 @@
+.auth-layout { display: grid; grid-template-columns: 40% 60%; min-height: 100dvh; }
+.brand-panel { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 48px; height: 100dvh; min-height: 720px; padding: 64px; background: var(--color-primary); color: var(--color-on-primary); }
+.brand-story { display: flex; flex-direction: column; gap: 24px; }
+.brand-story .eyebrow { color: var(--color-accent-on-primary); }
+.brand-story h2 { font: 400 56px/60px var(--font-heading); }
+.brand-promises { list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0; font-size: 13px; line-height: 20px; font-weight: 500; }
+.brand-promises li { display: flex; gap: 6px; }
+.auth-mobile-header { display: none; }
+.auth-main { padding: 64px; min-width: 0; }
+.auth-form { display: flex; flex-direction: column; gap: 24px; width: 100%; max-width: 440px; margin: 0 auto; }
+.form-intro { display: flex; flex-direction: column; gap: 12px; }
+.form-intro h1 { font: 400 56px/60px var(--font-heading); }
+.form-intro h1:focus { outline: none; }
+.form-description { color: var(--color-secondary-text); }
+.form-fields { display: flex; flex-direction: column; gap: 20px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.form-field label { font-weight: 500; font-size: 13px; line-height: 20px; }
+.field-control { display: flex; position: relative; min-width: 0; background: var(--color-surface); border: 1px solid var(--color-control-border); border-radius: var(--radius-control); }
+.field-control:focus-within { outline: 3px solid var(--color-focus); outline-offset: 2px; border-color: var(--color-primary); }
+.field-control input, .field-control select { min-width: 0; width: 100%; height: 50px; padding: 12px; border: 0; border-radius: var(--radius-control); background: transparent; color: var(--color-text); font-size: 15px; line-height: 24px; }
+.field-control input::placeholder { color: var(--color-secondary-text); opacity: 1; }
+.field-control input:focus, .field-control select:focus { outline: none; }
+.field-control select { appearance: none; padding-right: 76px; cursor: pointer; }
+.field-control select:has(option:checked[value=""]) { color: var(--color-secondary-text); }
+.field-control:has(select:disabled) { opacity: .65; }
+.field-control select:disabled { cursor: not-allowed; }
+.select-action { position: absolute; top: 50%; right: 16px; transform: translateY(-50%); font-size: 13px; line-height: 20px; color: var(--color-primary); pointer-events: none; }
+.password-toggle { flex-shrink: 0; min-width: 68px; padding: 0 16px; border: 0; border-radius: var(--radius-control); background: transparent; color: var(--color-primary); font-size: 13px; line-height: 20px; }
+.password-toggle:hover { background: var(--color-subtle); }
+.field-hint, .field-error, .form-footer, .new-member { color: var(--color-secondary-text); font-size: 13px; line-height: 20px; }
+.form-field-error .field-control { border-color: var(--color-error); }
+.field-error { color: var(--color-error); }
+.new-member { display: flex; flex-direction: column; gap: 12px; }
+.form-notice { padding: 16px; border-radius: var(--radius-control); background: var(--color-subtle); color: var(--color-secondary-text); font-size: 13px; line-height: 20px; }
+.form-notice h2 { font-family: var(--font-body); font-size: 13px; font-weight: 500; line-height: 20px; color: var(--color-primary); margin-bottom: 8px; }
+.error-summary h2, .error-summary a { color: var(--color-error); }
+.error-summary ul { margin: 0; padding-left: 18px; }
+.error-summary a { text-underline-offset: 3px; }
+.status-empty { height: 0; margin-top: -24px; overflow: hidden; }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .brand-panel { padding: 40px 32px; }
+  .brand-story h2 { font-size: 44px; line-height: 48px; }
+  .auth-main { padding: 48px 32px; }
+  .form-intro h1 { font-size: 48px; line-height: 52px; }
+}
+@media (max-width: 767px) {
+  .auth-layout { display: block; }
+  .brand-panel { display: none; }
+  .auth-mobile-header { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 24px; }
+  .auth-mobile-header .brand { color: var(--color-primary); }
+  .auth-mobile-header .eyebrow { flex: 0 1 160px; }
+  .auth-main { padding: 24px; }
+  .auth-form { max-width: 440px; }
+  .form-intro h1 { font-size: 40px; line-height: 44px; font-weight: 500; }
+}

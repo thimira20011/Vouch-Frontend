@@ -8,6 +8,11 @@
   --color-secondary-text: #5f695f;
   --color-subtle: #e9ede5;
   --color-accent: #826543;
+  --color-accent-on-primary: #d6b88a;
+  --color-primary-hover: #294c42;
+  --color-primary-active: #142d26;
+  --color-focus: #b9c8b9;
+  --color-error: #a52d22;
   --color-border: #d6dcd2;
   --color-control-border: #748374;
   --font-body: 'Inter', system-ui, sans-serif;
