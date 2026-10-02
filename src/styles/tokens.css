@@ -1,0 +1,17 @@
+:root {
+  /* Initial tokens from the Vouch Figma design. */
+  --color-background: #f6f4ee;
+  --color-surface: #fffefa;
+  --color-primary: #1d3c34;
+  --color-on-primary: #f6f4ee;
+  --color-text: #24332d;
+  --color-secondary-text: #5f695f;
+  --color-subtle: #e9ede5;
+  --color-accent: #826543;
+  --color-border: #d6dcd2;
+  --color-control-border: #748374;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --radius-control: 8px;
+  --radius-card: 16px;
+}

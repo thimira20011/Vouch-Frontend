@@ -1,0 +1,24 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+button, input, select, textarea { font: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.app-shell { max-width: 1128px; margin: 0 auto; padding: 48px 24px; }
+.brand { display: block; margin-bottom: 64px; color: var(--color-primary); font: 500 40px/44px var(--font-heading); }
+.eyebrow { color: var(--color-accent); font-size: 11px; font-weight: 600; letter-spacing: 1.1px; }
+h1 { margin: 12px 0 24px; font: 400 clamp(36px, 5vw, 56px)/1.1 var(--font-heading); }
+.intro { color: var(--color-secondary-text); font-size: 15px; }
