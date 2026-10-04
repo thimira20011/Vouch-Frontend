@@ -53,3 +53,4 @@
   .auth-form { max-width: 440px; }
   .form-intro h1 { font-size: 40px; line-height: 44px; font-weight: 500; }
 }
+.auth-preview-link { color: var(--color-secondary-text); text-align: center; font-size: 13px; line-height: 20px; padding-block: 12px; text-underline-offset: 4px; }
